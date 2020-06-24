@@ -10,10 +10,10 @@ module.exports = {
     },
     migrations: {
       tableName: "knex_migrations",
-      directory: "./data/migrations",
+      directory: "./src/data/migrations",
     },
     seeds: {
-      directory: "./data/seeds",
+      directory: "./src/data/seeds",
     },
     // debug: true,
     useNullAsDefault: true,
@@ -24,10 +24,10 @@ module.exports = {
     connection: process.env.HEROKU_POSTGRESQL_MAUVE_URL,
     migrations: {
       tablename: "knex_migrations",
-      directory: "./data/migrations",
+      directory: "./src/data/migrations",
     },
     seeds: {
-      directory: "./data/seeds",
+      directory: "./src/data/seeds",
     },
     pool: {
       min: 2,
@@ -44,11 +44,11 @@ module.exports = {
       max: 10,
     },
     migrations: {
-      directory: "./data/migrations",
+      directory: "./src/data/migrations",
       tableName: "knex_migrations",
     },
     seeds: {
-      directory: "./data/seeds",
+      directory: "./src/data/seeds",
     },
     useNullAsDefault: true,
   },
