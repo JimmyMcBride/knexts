@@ -14,7 +14,7 @@
     "knex-refresh": "knex migrate:rollback && knex migrate:latest && knex seed:run",
     "total-reset": "yarn db-remake && yarn knex-refresh",
     "test": "cross-env DB_ENV=testing jest --verbose --runInBand --forceExit",
-    "coverage": "jest --coverage --detectOpenHandles --forceExit || true"
+    "coverage": "cross-env DB_ENV=testing jest --coverage --detectOpenHandles --forceExit || true"
   },
   "dependencies": {
     "@types/bcrypt": "^3.0.0",
@@ -22,6 +22,7 @@
     "apollo-server-express": "^2.15.0",
     "apollo-server-testing": "^2.15.0",
     "bcrypt": "^5.0.0",
+    "graphql-tools": "^6.0.10",
     "graphql-yoga": "^1.18.3",
     "knex": "^0.21.1",
     "pg": "^8.2.1",

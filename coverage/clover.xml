@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592978844417" clover="3.2.0">
-  <project timestamp="1592978844417" name="All files">
-    <metrics statements="38" coveredstatements="38" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9" elements="51" coveredelements="51" complexity="0" loc="38" ncloc="38" packages="7" files="11" classes="11"/>
+<coverage generated="1592981478860" clover="3.2.0">
+  <project timestamp="1592981478860" name="All files">
+    <metrics statements="37" coveredstatements="37" conditionals="4" coveredconditionals="3" methods="9" coveredmethods="9" elements="50" coveredelements="49" complexity="0" loc="37" ncloc="37" packages="7" files="11" classes="11"/>
     <package name="knexts">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="knexfile.ts" path="/home/jim/Documents/experiments/back-end/knexts/knexfile.ts">
@@ -11,14 +11,13 @@
       </file>
     </package>
     <package name="knexts.src.data">
-      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <file name="dbConfig.ts" path="/home/jim/Documents/experiments/back-end/knexts/src/data/dbConfig.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
       </file>
     </package>
     <package name="knexts.src.data.migrations">

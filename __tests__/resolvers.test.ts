@@ -78,8 +78,6 @@ describe("Users Resolvers 🕺", () => {
       query: usersQuery,
     });
 
-    console.log("TEST RESPONSE ***", res.data);
-
     expect(res).toMatchObject({
       data: {
         users: [
