@@ -21,7 +21,7 @@ module.exports = {
 
   testing: {
     client: "pg",
-    connection: process.env.HEROKU_POSTGRESQL_MAUVE_URL,
+    connection: process.env.HEROKU_POSTGRESQL_BROWN_URL,
     migrations: {
       tablename: "knex_migrations",
       directory: "./src/data/migrations",

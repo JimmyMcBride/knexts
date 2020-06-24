@@ -13,7 +13,12 @@ app.get("/", async (_, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  introspection: true,
+  playground: true,
+});
 
 server.applyMiddleware({ app });
 

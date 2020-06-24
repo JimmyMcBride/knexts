@@ -9,12 +9,12 @@
   "private": false,
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "start": "node src/server.ts",
+    "start": "ts-node src/server.ts",
     "db-remake": "psql -U postgres -f remakeDatabase.sql",
     "knex-refresh": "knex migrate:rollback && knex migrate:latest && knex seed:run",
     "total-reset": "yarn db-remake && yarn knex-refresh",
-    "test": "cross-env DB_ENV=testing jest --verbose --runInBand --forceExit",
-    "coverage": "cross-env DB_ENV=testing jest --coverage --detectOpenHandles --forceExit || true"
+    "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --forceExit",
+    "coverage": "cross-env NODE_ENV=testing jest --coverage --detectOpenHandles --forceExit || true"
   },
   "dependencies": {
     "@types/bcrypt": "^3.0.0",
